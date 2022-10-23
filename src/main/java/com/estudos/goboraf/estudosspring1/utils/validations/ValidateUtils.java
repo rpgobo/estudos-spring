@@ -1,5 +1,7 @@
 package com.estudos.goboraf.estudosspring1.utils.validations;
 
+import com.estudos.goboraf.estudosspring1.utils.constants.ConstantStrings;
+
 import java.util.List;
 
 public class ValidateUtils {
@@ -15,5 +17,11 @@ public class ValidateUtils {
             return false;
         }
 
+    }
+
+    public static boolean isMock(String mock){
+        if (mock.equals(ConstantStrings.CONSTANT_STRINGS_MOCK))
+            return true;
+        return false;
     }
 }
